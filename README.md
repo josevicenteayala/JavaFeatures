@@ -1,7 +1,7 @@
 # Java Evolution: Features from Java 8 to 21
 Welcome to the Java Evolution repository, where we document the journey of Java from version 8 through 21, covering all the major features and changes introduced in each version. This repository aims to serve as a comprehensive guide for developers at all levels to understand the evolution of Java, enabling them to make the most of the language's capabilities in their projects.
 
-![](/Users/josevicenteayalaluna/Downloads/JavaEvolution.jpg)
+![](./images/JavaEvolution.jpg)
 
 ## Objective
 Our goal is to provide a detailed exploration of each feature introduced in Java from version 8 onwards, including examples and explanations to help Java developers grasp the concepts and apply them in practice.
