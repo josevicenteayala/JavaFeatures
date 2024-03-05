@@ -1,6 +1,8 @@
 # Java 8 Features Overview
 Welcome to the Java 8 module of the Java Evolution repository! Java 8, released in March 2014, marked a significant milestone in Java's development, introducing several powerful features that have since become integral to modern Java applications. This module aims to provide a comprehensive overview of Java 8's key features, including examples and explanations to help you understand and effectively utilize these enhancements in your projects.
 
+![Java8.jpg](..%2Fimages%2FJava8.jpg)
+
 ## Key Features of Java 8
 Java 8 introduced several major enhancements and new features:
 
