@@ -5,7 +5,7 @@ the major features and changes introduced in each version. This repository aims 
 developers at all levels to understand the evolution of Java, enabling them to make the most of the language's
 capabilities in their projects.
 
-![](./images/JavaEvolution.jpg)
+![JavaEvolution.jpg](Java8%2Fsrc%2Fmain%2Fresources%2Fimages%2FJavaEvolution.jpg)
 
 ## Objective
 

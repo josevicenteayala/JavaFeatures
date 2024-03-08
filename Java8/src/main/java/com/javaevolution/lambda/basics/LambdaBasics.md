@@ -3,7 +3,7 @@
 Lambda expressions in Java provide a clear and concise way to implement a single method interface using an expression.
 They are particularly useful in simplifying the code where an instance of an anonymous class is needed.
 
-![LambdaBasics.jpg](..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2Fimages%2FLambdaBasics.jpg)
+![LambdaBasics.jpg](..%2F..%2F..%2F..%2F..%2Fresources%2Fimages%2FLambdaBasics.jpg)
 
 ## Examples
 

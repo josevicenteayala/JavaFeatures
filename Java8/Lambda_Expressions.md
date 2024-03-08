@@ -4,7 +4,8 @@ Lambda expressions are one of the most significant features introduced in Java 8
 Java's programming paradigm, allowing you to write more concise and readable code, especially when working with
 collections and APIs designed for functional programming. This document provides an overview of lambda expressions,
 their syntax, and examples of how to use them effectively.
-![Lambda.jpg](..%2Fimages%2FLambda.jpg)
+
+![Lambda.jpg](src%2Fmain%2Fresources%2Fimages%2FLambda.jpg)
 
 ## What Are Lambda Expressions?
 

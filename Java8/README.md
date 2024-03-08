@@ -5,7 +5,7 @@ milestone in Java's development, introducing several powerful features that have
 applications. This module aims to provide a comprehensive overview of Java 8's key features, including examples and
 explanations to help you understand and effectively utilize these enhancements in your projects.
 
-![Java8.jpg](..%2Fimages%2FJava8.jpg)
+![Java8.jpg](src%2Fmain%2Fresources%2Fimages%2FJava8.jpg)
 
 ## Key Features of Java 8
 
