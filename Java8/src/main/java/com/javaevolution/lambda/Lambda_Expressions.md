@@ -5,7 +5,7 @@ Java's programming paradigm, allowing you to write more concise and readable cod
 collections and APIs designed for functional programming. This document provides an overview of lambda expressions,
 their syntax, and examples of how to use them effectively.
 
-![Lambda.jpg](src%2Fmain%2Fresources%2Fimages%2FLambda.jpg)
+![Lambda.jpg](..%2F..%2F..%2F..%2Fresources%2Fimages%2FLambda.jpg)
 
 ## What Are Lambda Expressions?
 
