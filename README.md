@@ -91,7 +91,7 @@ Virtual Threads (Preview), Structured Concurrency (Incubator), Pattern Matching 
 
 Record Patterns (Preview), Pattern Matching for Switch (Standard)
 
-### Java 21 (Expected around September 2023)
+### Java 21 (September 2023)
 
 (Features to be documented upon release)
 
