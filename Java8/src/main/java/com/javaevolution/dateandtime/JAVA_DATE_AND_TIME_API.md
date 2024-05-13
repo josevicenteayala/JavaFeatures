@@ -108,7 +108,7 @@ import java.time.temporal.TemporalQueries;
 public class TemporalQueriesExample {
     public static void main(String[] args) {
         LocalDate date = LocalDate.now();
-        int dayOfMonth = date.query(TemporalQueries.chronoField(ChronoField.DAY_OF_MONTH));
+        long dayOfMonth = ChronoField.DAY_OF_MONTH.getFrom(date);
         
         System.out.println("Day of the Month: " + dayOfMonth);
     }
