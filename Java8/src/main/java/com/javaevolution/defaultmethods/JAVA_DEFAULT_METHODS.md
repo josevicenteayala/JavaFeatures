@@ -1,6 +1,6 @@
 # Default Methods in Java
 Default methods are a significant addition to the Java programming language introduced in Java 8. They enable developers to add new methods to interfaces with a default implementation, allowing for backward compatibility and the evolution of interfaces over time without breaking existing code.
-
+![DefauldMethods.jpg](..%2F..%2F..%2F..%2Fresources%2Fimages%2FDefauldMethods.jpg)
 ## Key Features of Default Methods
 1. Backward Compatibility
    Default methods provide a mechanism to add new functionality to interfaces while maintaining compatibility with older code. This means that existing classes that implement the interface are not forced to implement the new methods immediately. The default implementation ensures that these new methods have a basic behavior, so existing classes remain functional.
