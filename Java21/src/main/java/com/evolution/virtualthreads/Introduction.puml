@@ -1,0 +1,51 @@
+@startuml
+skinparam style strictuml
+
+title Thread-per-Request Style and Scalability Challenges
+
+left to right direction
+
+' Define main components
+rectangle "Server Application" as Server {
+    rectangle "Thread-per-Request Style" as TPR {
+        [Request 1] -down-> (Thread 1)
+        [Request 2] -down-> (Thread 2)
+        [Request N] -down-> (Thread N)
+    }
+}
+
+' Show the advantages
+note right of TPR
+    Advantages:
+    - Easy to understand
+    - Easy to program
+    - Aligns application and platform concurrency
+end note
+
+' Scalability governed by Little's Law
+cloud "Little's Law:\nConcurrency = Throughput × Latency" as LittlesLaw
+LittlesLaw -up-> TPR
+
+' Show limitations of OS threads
+rectangle "OS Threads Limitations" as Limitations
+note right of Limitations
+    - High resource cost
+    - Limited number
+    - Bottleneck before CPU/network
+end note
+
+Limitations -left-> TPR
+
+' Thread Pooling
+rectangle "Thread Pooling" as Pooling
+Pooling -down-> Limitations
+note bottom of Pooling
+    - Reduces thread creation cost
+    - Does not increase total threads
+end note
+
+' Application Throughput Capped
+rectangle "Capped Throughput" as Capped
+Capped -left-> Limitations
+
+@enduml
