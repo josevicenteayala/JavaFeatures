@@ -171,6 +171,9 @@ ExecutorService executor = Executors.newVirtualThreadPerTaskExecutor();
 ## 6.3 Examples
 Example 1: Simple Virtual Thread
 ```java
+
+import java.util.logging.Logger;
+
 public class SimpleVirtualThread {
 
     private static final Logger LOGGER = Logger.getLogger(SimpleVirtualThread.class.getName());
@@ -183,6 +186,12 @@ public class SimpleVirtualThread {
 ```
 Example 2: Virtual Threads for Concurrent Tasks
 ```java
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 public class ConcurrentVirtualThreads {
 
     private static final Logger LOGGER = Logger.getLogger(ConcurrentVirtualThreads.class.getName());
@@ -217,6 +226,8 @@ Example 3: Using Virtual Thread Executor
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 public class VirtualThreadExecutorExample {
 
