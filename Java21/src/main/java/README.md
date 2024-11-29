@@ -172,10 +172,11 @@ ExecutorService executor = Executors.newVirtualThreadPerTaskExecutor();
 Example 1: Simple Virtual Thread
 ```java
 public class SimpleVirtualThread {
+
+    private static final Logger LOGGER = Logger.getLogger(SimpleVirtualThread.class.getName());
+    
     public static void main(String[] args) throws InterruptedException {
-        Thread virtualThread = Thread.startVirtualThread(() -> {
-            System.out.println("Hello from virtual thread: " + Thread.currentThread());
-        });
+        Thread virtualThread = Thread.startVirtualThread(() -> LOGGER.info("Hello from virtual thread: " + Thread.currentThread()));
         virtualThread.join();
     }
 }
@@ -183,6 +184,9 @@ public class SimpleVirtualThread {
 Example 2: Virtual Threads for Concurrent Tasks
 ```java
 public class ConcurrentVirtualThreads {
+
+    private static final Logger LOGGER = Logger.getLogger(ConcurrentVirtualThreads.class.getName());
+    
     public static void main(String[] args) throws InterruptedException {
         int numberOfTasks = 1000;
         List<Thread> threads = new ArrayList<>();
@@ -192,9 +196,9 @@ public class ConcurrentVirtualThreads {
                 try {
                     // Simulate a blocking operation
                     Thread.sleep(1000);
-                    System.out.println("Task completed by: " + Thread.currentThread());
+                    LOGGER.info("Task completed by: " + Thread.currentThread());
                 } catch (InterruptedException e) {
-                    throw new RuntimeException(e);
+                    LOGGER.log(Level.SEVERE,"Error executing task %{}", e.getMessage());
                 }
             });
             threads.add(thread);
@@ -215,23 +219,26 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
 
 public class VirtualThreadExecutorExample {
+
+    private static final Logger LOGGER = Logger.getLogger(VirtualThreadExecutorExample.class.getName());
+    
     public static void main(String[] args) throws InterruptedException {
-        ExecutorService executor = Executors.newVirtualThreadPerTaskExecutor();
+        try (ExecutorService executor = Executors.newVirtualThreadPerTaskExecutor()) {
+            for (int i = 0; i < 1000; i++) {
+                executor.submit(() -> {
+                    try {
+                        // Simulate a task
+                        Thread.sleep(1000);
+                        LOGGER.info("Task executed by: " + Thread.currentThread());
+                    } catch (InterruptedException e) {
+                        LOGGER.log(Level.SEVERE,"Error executing task %{}", e.getMessage());
+                    }
+                });
+            }
 
-        for (int i = 0; i < 1000; i++) {
-            executor.submit(() -> {
-                try {
-                    // Simulate a task
-                    Thread.sleep(1000);
-                    System.out.println("Task executed by: " + Thread.currentThread());
-                } catch (InterruptedException e) {
-                    throw new RuntimeException(e);
-                }
-            });
+            executor.shutdown();
+            executor.awaitTermination(10, TimeUnit.SECONDS);
         }
-
-        executor.shutdown();
-        executor.awaitTermination(10, TimeUnit.SECONDS);
     }
 }
 ```
