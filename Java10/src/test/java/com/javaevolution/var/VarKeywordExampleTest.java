@@ -74,7 +74,7 @@ class VarKeywordExampleTest {
         var stringVar = "test";
         assertTrue(stringVar instanceof String);
 
-        var intVar = 42;
+        var intVar = Integer.valueOf(42);
         assertTrue(intVar instanceof Integer);
 
         var listVar = new ArrayList<String>();
