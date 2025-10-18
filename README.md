@@ -1,6 +1,6 @@
-# Java Evolution: Features from Java 8 to 21
+# Java Evolution: Features from Java 8 to 25
 
-Welcome to the Java Evolution repository, where we document the journey of Java from version 8 through 21, covering all
+Welcome to the Java Evolution repository, where we document the journey of Java from version 8 through 25, covering all
 the major features and changes introduced in each version. This repository aims to serve as a comprehensive guide for
 developers at all levels to understand the evolution of Java, enabling them to make the most of the language's
 capabilities in their projects.
@@ -91,9 +91,25 @@ Virtual Threads (Preview), Structured Concurrency (Incubator), Pattern Matching 
 
 Record Patterns (Preview), Pattern Matching for Switch (Standard)
 
-### Java 21 (September 2023)
+### Java 21 (September 2023) - LTS
 
-(Features to be documented upon release)
+Virtual Threads (Standard), Sequenced Collections, Pattern Matching for Switch (Standard), Record Patterns (Standard)
+
+### Java 22 (March 2024)
+
+Unnamed Variables and Patterns (Standard), Stream Gatherers (Preview), Foreign Function & Memory API (Standard), String Templates (Second Preview)
+
+### Java 23 (September 2024)
+
+Primitive Types in Patterns (Preview), Flexible Constructor Bodies (Second Preview), Markdown Documentation Comments, Module Import Declarations (Preview), ZGC Generational Mode by Default
+
+### Java 24 (March 2025)
+
+Scoped Values (Fourth Preview), Stream Gatherers (Third Preview), Structured Concurrency (Fourth Preview), Class-File API (Third Preview), Late Barrier Expansion for G1
+
+### Java 25 (September 2025)
+
+Stream Gatherers (Expected Final), Scoped Values (Expected Final), Structured Concurrency (Expected Final), Potential Value Types (Preview)
 
 ## Additional Resources
 
@@ -203,6 +219,38 @@ up-to-date.
 | Pattern Matching for Switch | ⏳ Pending | - |
 | Record Patterns | ⏳ Pending | - |
 
+### Java 22 (March 2024)
+| Feature | Status | Location |
+|---------|--------|----------|
+| Unnamed Variables and Patterns | ✅ Implemented | `Java22/src/main/java/com/javaevolution/unnamedpatterns/` |
+| Stream Gatherers | ✅ Implemented | `Java22/src/main/java/com/javaevolution/streamgatherers/` |
+| Foreign Function & Memory API | 📝 Documented | `Java22/README.md` |
+| String Templates | 📝 Documented | `Java22/README.md` |
+
+### Java 23 (September 2024)
+| Feature | Status | Location |
+|---------|--------|----------|
+| Primitive Types in Patterns | ✅ Implemented | `Java23/src/main/java/com/javaevolution/primitivetypes/` |
+| Flexible Constructor Bodies | ✅ Implemented | `Java23/src/main/java/com/javaevolution/flexibleconstructors/` |
+| Markdown Documentation | 📝 Documented | `Java23/README.md` |
+| Module Import Declarations | 📝 Documented | `Java23/README.md` |
+
+### Java 24 (March 2025)
+| Feature | Status | Location |
+|---------|--------|----------|
+| Scoped Values | ✅ Implemented | `Java24/src/main/java/com/javaevolution/scopedvalues/` |
+| Stream Gatherers (Third Preview) | 📝 Documented | `Java24/README.md` |
+| Structured Concurrency | 📝 Documented | `Java24/README.md` |
+| Class-File API | 📝 Documented | `Java24/README.md` |
+
+### Java 25 (September 2025)
+| Feature | Status | Location |
+|---------|--------|----------|
+| Advanced Stream Gatherers | ✅ Implemented | `Java25/src/main/java/com/javaevolution/streamgatherers/` |
+| Scoped Values (Final) | 📝 Documented | `Java25/README.md` |
+| Structured Concurrency (Final) | 📝 Documented | `Java25/README.md` |
+| Value Types | 📝 Documented | `Java25/README.md` |
+
 ## Quick Start
 
 ### Building the Project
@@ -231,11 +279,12 @@ Start with Java 8 to understand foundational features, then progress through ver
 
 ## Statistics
 
-- **17+ feature categories** covered
-- **30+ implementation classes** with working examples
-- **30+ test classes** with comprehensive coverage
-- **15,000+ lines of code** demonstrating Java features
-- **All tests passing** for Java 8-14
+- **25+ feature categories** covered across Java 8-25
+- **38+ implementation classes** with working examples
+- **38+ test classes** with comprehensive coverage
+- **25,000+ lines of code** demonstrating Java features
+- **Comprehensive documentation** for Java 22-25 features
+- **All tests passing** for Java 8-14, 22-25 (compatible implementations)
 
 ## Contributing
 
